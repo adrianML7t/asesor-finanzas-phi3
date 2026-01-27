@@ -6,28 +6,28 @@
 ![License](https://img.shields.io/badge/License-Apache_2.0-red)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Model-yellow)
 
-Este proyecto implementa un **Asistente Financiero Personal en Español** basado en el modelo **Phi-3 Mini 4k Instruct** de Microsoft. 
+This project implements a **Personal Financial Assistant in Spanish** based on Microsoft's **Phi-3 Mini 4k Instruct** model.
 
-El modelo ha sido sometido a un proceso de ajuste fino (Fine-Tuning) utilizando **QLoRA** y la librería **Unsloth** para responder preguntas sobre ahorro, inversión, hipotecas y fiscalidad (especialmente normativa española), adaptando sus respuestas al perfil de riesgo y situación personal del usuario.
+The model has undergone a fine-tuning process using **QLoRA** and the Unsloth library to answer questions regarding savings, investing, mortgages, and taxation (specifically Spanish regulations), adapting its responses to the user's risk profile and personal situation.
 
-🔗 **Modelo en Hugging Face:** [AdrianML7/asesor-finanzas-phi3](https://huggingface.co/AdrianML7/asesor-finanzas-phi3)
-
----
-
-## 🚀 Características Principales
-
-* **🧠 Base Model:** `unsloth/Phi-3-mini-4k-instruct-bnb-4bit` (Optimizado para bajo consumo de VRAM).
-* **🗣️ Idioma:** Español nativo.
-* **🎯 Contextual:** Entrenado para utilizar el campo `Input` del prompt. No da consejos genéricos; adapta la respuesta si el usuario es un "estudiante sin ingresos" o un "jubilado conservador".
-* **📚 Conocimiento Específico:** Cubre temas como:
-    * Inversión en Bolsa y Fondos Indexados.
-    * Fiscalidad y declaración de la Renta en España.
-    * Criptomonedas (con advertencias de riesgo).
-    * Planificación de jubilación e hipotecas.
-* **⚡ Rendimiento:** Entrenado y optimizado para inferencia rápida con cuantización de 4-bits.
+🔗 **Model avaliable on Hugging Face:** [AdrianML7/asesor-finanzas-phi3](https://huggingface.co/AdrianML7/asesor-finanzas-phi3)
 
 ---
 
-## 🛠️ Instalación
+## 🚀 Key Features
 
-Para ejecutar este modelo, se recomienda utilizar un entorno con GPU (Google Colab T4 o local con CUDA).
+* **🧠 Base Model:** `unsloth/Phi-3-mini-4k-instruct-bnb-4bit` (Optimized for low VRAM usage).
+* **🗣️ Language:** Native Spanish.
+* **🎯 Contextual:** Trained to utilize the `Input` field of the prompt. It does not provide generic advice; it adapts the response depending on whether the user is a "student with no income" or a "conservative retiree."
+* **📚 Specific Knowledge:** Covers topics such as:
+    * Stock Market and Index Fund investing.
+    * Taxation and Income Tax filing in Spain.
+    * Cryptocurrencies (with risk warnings).
+    * Retirement planning and mortgages.
+* **⚡ Performance:** Trained and optimized for fast inference with 4-bit quantization.
+
+---
+
+## 🛠️ Running the model
+
+To run this model, using a GPU environment (Google Colab T4 or local with CUDA) is recommended.
